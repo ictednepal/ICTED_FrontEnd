@@ -6,29 +6,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
-#headerWrap {
-    width: 1500px;
-    height: 100px;
-    margin: 0 auto;
-    border-bottom: 1px solid #c2c2c2;
-    overflow: hidden;
+.header {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #c2c2c2 !important;
 }
 
 .logo {
-    width: 470px;
-    height: 100px;
     float: left;
-    padding-top: 30px;
 }
 
 .menu {
-    width: 1000px;
-    height: 100px;
-    float: right;
-}
-
-.menu ul {
-    padding-top: 40px;
     float: right;
 }
 
@@ -51,45 +40,60 @@
     color: #6c63ff
 }
 
-#contentWrap {
-    width: 1500px;
-    height: 600px;
-    padding-top: 100px;
-    margin: 0 auto;
+/* GENERIC LAYOUT CLASSES
+********************************** */
+.container {
+    max-width: 1366px;
+    min-width: 540px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.textBox {
-    width: 750px;
-    height: 500px;
+.container-full {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* ********************************* */
+
+
+#hero-content {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#hero-content .textBox {
+    max-width: 750px;
     float: left;
 }
 
-.textBox h3 {
+#hero-content .textBox h3 {
     color: #e06100;
     text-transform: capitalize;
     font-size: 32px;
     font-weight: 500;
 }
 
-.textBox h2 {
+#hero-content .textBox h2 {
     color: #5a64ed;
     text-transform: capitalize;
     font-size: 42px;
     font-weight: 600;
 }
 
-.textBox p {
+#hero-content .textBox p {
     font-size: 18px;
     line-height: 2em;
     padding-bottom: 40px;
 }
 
-.imgBox {
-    width: 550px;
-    height: 380px;
+#hero-content .imgBox {
+    display: block;
     float: right;
-    padding-top: 120px;
-    padding-left: 200px;
 }
 
 a.btn {
