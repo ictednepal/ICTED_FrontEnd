@@ -143,24 +143,39 @@ a.btn:hover {
 
 .services {
     width: 100%;
-    padding-bottom: 40px;
+    margin: 0 auto;
     overflow: hidden;
 }
 
 .service {
     width: 33%;
     float: left;
+    overflow: hidden;
+    border-radius: 5px;
+    /* This should be add in order to transition effect during mouse hover over*/
+    transition: all 0.3s ease 0s;
+}
+
+.service:hover {
+    cursor: pointer;
+    color: white !important;
+    background-color: #6c63ff !important;
 }
 
 .service .service-top,
 .service .service-body {
-    padding: 20px;
+    padding: 40px;
     margin: 0 auto;
     text-align: center;
 }
 
 .service i {
     color: #5a64ed !important;
+}
+
+.service:hover i {
+    /* FontAwesome icon color override */
+    color: white !important;
 }
 
 .service-body h4 {
